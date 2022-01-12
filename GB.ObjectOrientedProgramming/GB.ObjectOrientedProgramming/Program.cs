@@ -9,11 +9,5 @@ namespace GB.ObjectOrientedProgramming
             Console.WriteLine("Hello World!");
         }
 
-
-        static void Draw (int x, int y, char symbol)
-        {
-            Console.SetCursorPosition(x, y);
-            Console.WriteLine(symbol);
-        }
     }
 }
