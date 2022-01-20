@@ -6,14 +6,26 @@ namespace GB.ObjectOrientedProgramming
 {
     class Point
     {
-        public int x;
-        public int y;
-        public char symbol;
+        private int x;
+        private int y;
+        private char symbol;
 
-        void Draw(int x, int y, char symbol)
+        public Point()
         {
-            Console.SetCursorPosition(x, y);
-            Console.WriteLine(symbol);
+                
+        }
+
+        public Point(int x, int y, char symbol)
+        {
+            this.x = x;
+            this.y = y;
+            this.symbol = symbol;
+        }
+
+        public void Draw()
+        {
+            Console.SetCursorPosition(this.x, this.y);
+            Console.WriteLine(this.symbol);
         }
     }
 }
